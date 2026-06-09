@@ -6,9 +6,12 @@ import Services from "./components/Services";
 import OurWork from "./components/OurWork";
 import Teams from "./components/Teams";
 import ContactUs from "./components/ContactUs";
+import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
+      <Toaster position="top-right" />
       <Navbar />
 
       <Hero />
@@ -22,6 +25,8 @@ function App() {
       <Teams />
 
       <ContactUs />
+
+      <Footer />
     </div>
   );
 }
